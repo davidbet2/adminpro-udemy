@@ -13,7 +13,7 @@ const Pagesroutes: Routes = [
         component: PagesComponent,
         children: [
             { path: 'progress', component: ProgressComponent, data: {titulo: 'Progress'} },
-            { path: 'graficas1', component: Graficas1Component, data: {titulo: 'Gráficas'} },
+            { path: 'graficas1', component: Graficas1Component, data: {titulo: 'Gráfivas'} },
             { path: 'promesas', component: PromesasComponent, data: {titulo: 'Promesas'} },
             { path: 'rxjs', component: RxjsComponent, data: {titulo: 'RxJs'} },
             { path: 'account-settings', component: AccountSettingsComponent, data: {titulo: 'Ajustes del tema'} },
