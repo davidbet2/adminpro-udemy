@@ -5,8 +5,7 @@ import { environment } from '../../../environments/environment';
 import { map } from 'rxjs/operators';
 import { pipe } from 'rxjs';
 import { Router } from '@angular/router';
-import { SubirArchivoService } from '../subir-archivo/subir-archivo.service';
-
+import { SubirArchivoService } from '../../../../.history/src/app/services/subir-archivo/subir-archivo.service_20190422205433';
 
 @Injectable({
   providedIn: 'root'
@@ -89,10 +88,8 @@ export class UsuarioService {
 
   cambiarImagen( archivo: File, id: string) {
     this._subirArchivoService.subirArchivo(archivo, 'usuarios', id)
-    .then( (resp: any) => {
-      this.usuario.img = resp.usuario.img;
-      swal('Imagen actualizada', this.usuario.nombre, 'success');
-      this.guardarStorage(id, this.token, this.usuario);
+    .then( resp => {
+      console.log(resp);
     })
     .catch( err => {
       console.log(err);

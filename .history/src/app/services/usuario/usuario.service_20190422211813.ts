@@ -91,8 +91,6 @@ export class UsuarioService {
     this._subirArchivoService.subirArchivo(archivo, 'usuarios', id)
     .then( (resp: any) => {
       this.usuario.img = resp.usuario.img;
-      swal('Imagen actualizada', this.usuario.nombre, 'success');
-      this.guardarStorage(id, this.token, this.usuario);
     })
     .catch( err => {
       console.log(err);

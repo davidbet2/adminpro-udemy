@@ -18,8 +18,7 @@ import { PipesModule } from '../pipes/pipes.module';
         NopagefoundComponent,
         HeaderComponent,
         SidebarComponent,
-        BreadcrumbsComponent,
-        PipesModule
+        BreadcrumbsComponent
     ],
     declarations: [
     NopagefoundComponent,

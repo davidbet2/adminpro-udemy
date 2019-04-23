@@ -23,8 +23,6 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 
 // pipe module
 import { PipesModule } from '../pipes/pipes.module';
-import { ProfilesComponent } from './profiles/profiles.component';
-import { CommonModule } from '@angular/common';
 
 
 
@@ -34,8 +32,7 @@ import { CommonModule } from '@angular/common';
         PAGES_ROUTES,
         FormsModule,
         ChartsModule,
-        PipesModule,
-        CommonModule
+        PipesModule
     ],
     exports: [
         DashboardComponent,
@@ -53,8 +50,7 @@ import { CommonModule } from '@angular/common';
         GraficoDonaComponent,
         AccountSettingsComponent,
         PromesasComponent,
-        RxjsComponent,
-        ProfilesComponent
+        RxjsComponent
     ],
     providers: [],
 })
