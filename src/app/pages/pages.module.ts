@@ -25,6 +25,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { PipesModule } from '../pipes/pipes.module';
 import { ProfilesComponent } from './profiles/profiles.component';
 import { CommonModule } from '@angular/common';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
 
 
 
@@ -54,7 +56,9 @@ import { CommonModule } from '@angular/common';
         AccountSettingsComponent,
         PromesasComponent,
         RxjsComponent,
-        ProfilesComponent
+        ProfilesComponent,
+        UsuariosComponent,
+        ModalUploadComponent
     ],
     providers: [],
 })
